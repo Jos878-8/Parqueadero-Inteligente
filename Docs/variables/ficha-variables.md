@@ -1,8 +1,5 @@
 Ficha Técnica de Variables
 
-**Proyecto:** Parqueadero Inteligente
-**Variables:** `occupied`, `distance`, `parking_duration`
-
 | Atributo | occupied | distance | parking_duration |
 |---|---|---|---|
 | **Nombre** | occupied | distance | parking_duration |
