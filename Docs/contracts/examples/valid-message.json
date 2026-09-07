@@ -1,1 +1,11 @@
-
+{
+  "message_id": "PARK-001-000001",
+  "device_id": "PARK-001",
+  "timestamp": "2026-09-06T21:00:00Z",
+  "sequence": 1,
+  "measurements": {
+    "occupied": true,
+    "distance": 15.5,
+    "parking_duration": 60
+  }
+}
