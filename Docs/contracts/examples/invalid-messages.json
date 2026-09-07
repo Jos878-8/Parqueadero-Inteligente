@@ -1,1 +1,34 @@
-
+[
+  {
+    "message_id": "PARK-001-000002",
+    "timestamp": "2026-09-06T21:00:15Z",
+    "sequence": 2,
+    "measurements": {
+      "occupied": false,
+      "distance": 120,
+      "parking_duration": 0
+    }
+  },
+  {
+    "message_id": "PARK-001-000003",
+    "device_id": "PARK-001",
+    "timestamp": "fecha-invalida",
+    "sequence": 3,
+    "measurements": {
+      "occupied": true,
+      "distance": 15.5,
+      "parking_duration": 60
+    }
+  },
+  {
+    "message_id": "PARK-001-000004",
+    "device_id": "PARK-001",
+    "timestamp": "2026-09-06T21:00:45Z",
+    "sequence": "4",
+    "measurements": {
+      "occupied": true,
+      "distance": 15.5,
+      "parking_duration": 60
+    }
+  }
+]
