@@ -1,1 +1,59 @@
-
+{
+  "device_id": "PARK-001",
+  "interval_seconds": 15,
+  "scenario": "normal",
+  "seed": 42,
+  "variables": [
+    {
+      "name": "occupied",
+      "label": "Ocupación del espacio",
+      "type": "boolean",
+      "unit": null,
+      "initial": false,
+      "simulation_min": null,
+      "simulation_max": null,
+      "valid_min": null,
+      "valid_max": null,
+      "max_variation": null,
+      "decimals": 0,
+      "enabled": true,
+      "alert_rule": null
+    },
+    {
+      "name": "distance",
+      "label": "Distancia del vehículo",
+      "type": "number",
+      "unit": "cm",
+      "initial": 400.0,
+      "simulation_min": 2.0,
+      "simulation_max": 400.0,
+      "valid_min": 0.0,
+      "valid_max": 400.0,
+      "max_variation": 5.0,
+      "decimals": 1,
+      "enabled": true,
+      "alert_rule": {
+        "operator": "<",
+        "value": 2.0
+      }
+    },
+    {
+      "name": "parking_duration",
+      "label": "Tiempo de permanencia",
+      "type": "number",
+      "unit": "minutos",
+      "initial": 0,
+      "simulation_min": 0,
+      "simulation_max": 180,
+      "valid_min": 0,
+      "valid_max": 1440,
+      "max_variation": 1,
+      "decimals": 0,
+      "enabled": true,
+      "alert_rule": {
+        "operator": ">",
+        "value": 60
+      }
+    }
+  ]
+}
