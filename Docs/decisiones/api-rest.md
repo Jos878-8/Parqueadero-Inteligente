@@ -11,7 +11,7 @@
 | ¿Qué respuesta se espera si el dispositivo no existe? | `404 Not Found` con `{"detail": "Dispositivo no encontrado"}`. Una consulta de mediciones sin coincidencias NO es error: `200` y `[]`. |
 | ¿Qué límite máximo de registros permitirá la API? | `limit` entre 1 y 100 (por defecto 20); `offset` ≥ 0. Fuera de rango responde `422`. |
 
-## Justificación (≤150 palabras)
+## Justificación 
 
 Usamos sustantivos en plural (`devices`, `measurements`) y el método GET, porque la acción ya está en el verbo HTTP. El dispositivo concreto va en la ruta (`/devices/{device_id}`) porque es un recurso con identidad propia; los filtros y la paginación van como query parameters porque modifican una colección sin crear endpoints nuevos. Limitamos `limit` a 100 para que ninguna solicitud devuelva toda la base: es una decisión académica, no una regla de REST. El dashboard y otros clientes consultan la API y no abren `parking.db`, de modo que podemos cambiar el almacenamiento sin reescribir los clientes. Los timestamps se manejan en UTC (ISO 8601), como el contrato de telemetría.
 
