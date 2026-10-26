@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+requests
+paho-mqtt
+pytest
+httpx

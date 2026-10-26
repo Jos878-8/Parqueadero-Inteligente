@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Parqueadero Inteligente</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Parqueadero Inteligente</h1>
+
+        <p>Monitoreo en tiempo real</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="summary">
+
+            <div class="card">
+                <h2 id="available">0</h2>
+                <p>Espacios disponibles</p>
+            </div>
+
+            <div class="card">
+                <h2 id="occupied">0</h2>
+                <p>Espacios ocupados</p>
+            </div>
+
+            <div class="card">
+                <h2 id="alerts">0</h2>
+                <p>Alertas</p>
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Estado del parqueadero</h2>
+
+            <div id="parking-container"
+                 class="parking-container">
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Alertas</h2>
+
+            <div id="alerts-container">
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Historial</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Espacio</th>
+                        <th>Estado</th>
+                        <th>Distancia</th>
+                        <th>Tiempo</th>
+                        <th>Fecha</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="history">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
