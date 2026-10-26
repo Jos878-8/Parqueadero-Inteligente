@@ -1,4 +1,4 @@
-# Decisiones de diseño de la API REST — Parqueadero Inteligente (Guía 4)
+# Decisiones de diseño de la API REST — Parqueadero Inteligente 
 
 ## Matriz de diseño (A1)
 
